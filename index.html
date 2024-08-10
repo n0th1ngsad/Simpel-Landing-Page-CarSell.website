@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page Car Selling Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.4/dist/full.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script> 
+  <link rel="stylesheet" href="/Assets/styles.css" />
+</head>
+<body>
+
+  <header class="py-6 px-4 md:px-12 lg:px-24 bg-white fixed top-0 w-full z-50">
+    <div class="flex items-center justify-between">
+      <a href="#beranda" class="text-2xl font-bold text-gray-800">Mobil<span class="text-orange-500">Ngentod</span></a>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#beranda" class="text-gray-600 hover:text-orange-500 transition duration-300">Beranda</a></li>
+          <li><a href="#tentang-kami" class="text-gray-600 hover:text-orange-500 transition duration-300">Tentang Kami</a></li>
+          <li><a href="#layanan" class="text-gray-600 hover:text-orange-500 transition duration-300">Layanan</a></li>
+          <li><a href="#kontak" class="text-gray-600 hover:text-orange-500 transition duration-300">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="beranda" class="hero-section h-screen pt-24">
+    <div class="container mx-auto px-4 md:px-12 lg:px-24 h-full flex items-center">
+      <div class="w-full lg:w-1/2">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">Temukan Mobil Impian Anda</h1>
+        <p class="text-lg md:text-xl text-white mb-8">Kami menyediakan berbagai pilihan mobil berkualitas dengan harga terbaik. Wujudkan impian Anda memiliki mobil idaman bersama kami.</p>
+        <a href="#" class="bg-white text-orange-500 font-bold py-3 px-6 rounded-full hover:bg-orange-100 transition duration-300">Jelajahi Sekarang</a>
+      </div>
+      <div class="w-full lg:w-1/2 relative hidden lg:block">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="Assets/Image/car1.png" alt="Mobil 1"> 
+            </div>
+            <div class="swiper-slide">
+              <img src="Assets/Image/car2.png" alt="Mobil 2"> 
+            </div>
+            <div class="swiper-slide">
+              <img src="car3.png" alt="Mobil 3"> 
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tentang-kami" class="features py-20 bg-gray-50">
+    <div class="container mx-auto px-4 md:px-12 lg:px-24">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Mengapa Memilih Kami?</h2>
+        <p class="text-lg text-gray-600">Kami berkomitmen untuk memberikan pengalaman terbaik bagi Anda dalam mencari mobil impian.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center">
+          <span class="text-5xl feature-icon mb-4"><i class="fas fa-car"></i></span>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Pilihan Mobil Berkualitas</h3>
+          <p class="text-gray-600">Kami menyediakan berbagai pilihan mobil berkualitas dari merek-merek ternama.</p>
+        </div>
+        <div class="text-center">
+          <span class="text-5xl feature-icon mb-4"><i class="fas fa-hand-holding-usd"></i></span>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Harga Terjangkau</h3>
+          <p class="text-gray-600">Dapatkan mobil impian Anda dengan harga terbaik dan penawaran menarik.</p>
+        </div>
+        <div class="text-center">
+          <span class="text-5xl feature-icon mb-4"><i class="fas fa-handshake"></i></span>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Layanan Profesional</h3>
+          <p class="text-gray-600">Tim profesional kami siap membantu Anda menemukan mobil yang sesuai dengan kebutuhan.</p>
+        </div>
+        <div class="text-center">
+          <span class="text-5xl feature-icon mb-4"><i class="fas fa-star"></i></span>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Kepuasan Pelanggan</h3>
+          <p class="text-gray-600">Kepuasan pelanggan adalah prioritas utama kami. Kami selalu berusaha memberikan yang terbaik.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="layanan" class="cta py-20 bg-gradient-to-r from-orange-400 to-yellow-500"> 
+    <div class="container mx-auto px-4 md:px-12 lg:px-24 text-center">
+      <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Wujudkan Impian Anda Sekarang!</h2>
+      <p class="text-lg text-white mb-8">Hubungi kami untuk informasi lebih lanjut dan temukan mobil impian Anda.</p>
+      <a href="#kontak" class="bg-white text-orange-500 font-bold py-3 px-6 rounded-full hover:bg-orange-100 transition duration-300">Hubungi Kami</a>
+    </div>
+  </section>
+
+  <footer id="kontak" class="py-6 px-4 md:px-12 lg:px-24 bg-gray-800 text-white text-center">
+    <p>&copy; https://github.com/n0th1ngsad.</p>
+  </footer>
+
+  <script src="/Assets/script.js"></script>
+</body>
+</html>
